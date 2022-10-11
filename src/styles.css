@@ -1,0 +1,350 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    color: #fee;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color:#d5cbcb;
+}
+
+li {
+    list-style-type: none;
+}
+body{
+    background-color: rgb(47, 47, 52);
+    color: white;
+}
+
+/* HEADER & NAV */
+.header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 4rem;
+}
+
+.header__logo {
+    font: 400 3.5rem "Press Start 2P";
+    color: #fee;
+    text-shadow: 0 0 2px, 0 0 1em #fa50f2, 0 0 0.5em #fa50f2, 0 0 0.1em #fa50f2, 0 10px 3px #000;
+    transition: 0.3s ease-in;
+}
+.header__logo:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+.header__nav-list{
+    display: flex;
+    gap: 30px;
+    font: 400 1.1rem 'Press Start 2P';
+    margin-top: 3rem;
+}
+.header__nav-list-item{
+    position: relative;
+}
+.header__nav-list-item:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: #f57371;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+}
+.header__nav-list-item:hover:after{
+    transform: scaleX(1);
+}
+.header__nav-contact{
+    background-color:#542A71;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease-in;
+}
+.header__nav-contact:hover{
+    padding: 20px;
+    transition: 0.3s ease-in;
+
+}
+
+/* HOME */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding-left: 1.5rem;
+}
+.home__img{
+    width: 30%;
+    border-radius: 1rem;
+}
+.home__text{
+    text-align: center;
+}
+.home__text h1{
+    font: 400 3rem 'Press Start 2P';
+    padding-bottom: 3%;
+    color:#d8b1f4;
+}
+.home__text p{
+    font: 400 1rem 'Press Start 2P';
+    padding: 10px;
+}
+.arrow{
+    font: 400 2rem 'Press Start 2P';
+    color:#d8b1f4;
+    margin: 20px;
+}
+
+/* EXPERIENCE */
+.experience{
+    height: 600px;
+}
+.experience__title{
+    display: inline-block;
+    text-align: left;
+    margin: 4rem;
+    padding: 2%;
+    font: 400 2rem 'Press Start 2P';
+    text-shadow: 0 0 2px, 0 0 1em #f57371, 0 0 0.5em #f57371, 0 0 0.1em #f57371, 0 10px 3px #000;
+}
+.experience p{
+    font: 400 1.3rem 'Press Start 2P';
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+/* EDUCATION */
+.education{
+    height: 600px;
+}
+.education__title{
+    display: inline-block;
+    text-align: left;
+    margin: 4rem;
+    padding: 2%;
+    font: 400 2rem 'Press Start 2P';
+    text-shadow: 0 0 2px, 0 0 1em #68ACA3, 0 0 0.5em #68ACA3, 0 0 0.1em #68ACA3, 0 10px 3px #000;
+
+}
+.education p {
+    font: 400 1.3rem 'Press Start 2P';
+    text-align: center;
+    padding-top: 5%;
+}
+/* SKILLS */
+.skills__title {
+    display: inline-block;
+    text-align: left;
+    margin: 4rem;
+    font: 400 2rem 'Press Start 2P';
+    text-shadow: 0 0 2px, 0 0 1em #f57371, 0 0 0.5em #f57371, 0 0 0.1em #f57371, 0 10px 3px #000;
+}
+.skills__container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    gap: 10px;
+    padding-bottom: 3rem;
+}
+.skills__box {
+    width: 30%;
+    height: 150px;
+}
+.skills__box img {
+    width: 100px;
+    height: 100px;
+}
+.skills__box h3 {
+    font: 400 1rem 'Press Start 2P';
+}
+/* LANGUAGES */
+.languages__title {
+    display: inline-block;
+    text-align: left;
+    margin: 4rem;
+    font: 400 2rem 'Press Start 2P';
+    text-shadow: 0 0 2px, 0 0 1em #68ACA3, 0 0 0.5em #68ACA3, 0 0 0.1em #68ACA3, 0 10px 3px #000;
+}
+.languages__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.languages__item {
+    border-radius: 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.languages__item img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 5px 5px 25px #542A71;
+}
+.language__native {
+    font-size: 3rem;
+    color: rgb(237, 223, 245);
+    transform: translateY(-80px);
+    text-shadow: 5px 5px 5px black;
+    font: 400 2rem 'Press Start 2P';
+    font-style: bold;
+    transition: 0.3s;
+    text-shadow: 0 0 2px, 0 0 1em #542A71, 0 0 0.5em #542A71, 0 0 0.1em #542A71, 0 10px 3px #000;
+}
+.characters{
+    font-size: 3rem;
+    transform: translateY(-100px);
+}
+.language__english {
+    font-size: 2.5rem;
+    color: white;
+    transform: translateY(-80px);
+    text-shadow: 5px 5px 5px black;
+    font-style: bold;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.languages__item:hover{
+    cursor: pointer;
+}
+.languages__item:hover .language__english {
+    visibility: visible;
+    transition-delay: 0.3s;
+    transform: translateY(-150px);
+    transition: ease-in-out;
+}
+.languages__item:hover .language__native {
+    transition-delay: 0.3s;
+    transform: translateY(-150px);
+    transition: ease-in-out;
+}
+
+/* FORM */
+.form__title {
+    display: inline-block;
+    text-align: left;
+    margin: 2rem;
+    font: 400 2rem 'Press Start 2P';
+    text-shadow: 0 0 2px, 0 0 1em #542A71, 0 0 0.5em #542A71, 0 0 0.1em #542A71, 0 10px 3px #000;
+
+}
+
+.form {
+    height: 75vh;
+    box-sizing: border-box;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: #855ea0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px rgba(8, 5, 5, 0.8);
+    padding: 2rem;
+}
+.form__input, .form__cta {
+    position: relative; 
+}
+
+label {
+    position: absolute;
+    color: #e1baeb;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-family: 'Press Start 2P';
+    pointer-events: none;
+    transition: .5s;
+    font-size: 16px; 
+}
+input {
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+}
+input:focus, input:valid{
+    outline: 0;
+    border-bottom-color: #542A71;
+}
+.form .form__input input:focus ~ label, 
+.form .form__input input:valid ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+textarea{
+    background-color: #4b2f4f;
+}
+
+.form__cta-button{
+    background-color: #4b2f4f;
+    font: 400 20px 'Press Start 2P';
+    height: 50px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #855ea0;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    font: 400 1.3rem 'Press Start 2P';
+}
+.footer img {
+    padding: 20px;
+    filter: invert(1);
+    height: 70px;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    .header, .home {
+        display: block;
+    }
+    .home{
+        height: 600px;
+    }
+    .header__nav-list{
+        display: flex;
+        gap: 20px;
+        font: 400 0.85rem 'Press Start 2P';
+        margin-top: 3rem;
+    }
+    .home__img{
+        display: block;
+        margin: auto;
+        padding: 5%;
+        border-radius: 2rem;
+    }
+    .languages__container {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .skills__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
